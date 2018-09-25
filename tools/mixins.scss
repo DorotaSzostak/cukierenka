@@ -1,0 +1,16 @@
+$tablet-width: 768px;
+$desktop-width: 992px;
+
+@mixin desktopmenu {
+    @media(min-width: #{$desktop-width}){
+        @content;
+    }
+}
+
+@mixin covaContainer() {
+
+  display: block;
+  max-width: 1352px;
+  margin: 0 auto;
+
+}

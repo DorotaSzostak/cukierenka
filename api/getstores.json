@@ -1,0 +1,77 @@
+{
+	"status": "ok",
+	"result": [
+		{
+			"id": "milan_montenapoleone",
+			"name1": "Milan",
+			"name2": "Montenapoleone",
+			"imgDesktop": "/Media/placeholders/locations/milan.jpg",
+			"imgMobile": "/Media/placeholders/locations/milan.jpg",
+			"address1": "Via Montenapoleone, 8",
+			"address2": "Milan, Italy",
+			"lat": 45.4681529,
+			"lng": 9.195185,
+			"phone": "+39 02 7600 5599"
+		},
+		{
+			"id": "bologna_andrea_costa",
+			"name1": "Bologna",
+			"name2": "Saragozza",
+			"imgDesktop": "/Media/placeholders/locations/bologna.jpg",
+			"imgMobile": "/Media/placeholders/locations/bologna.jpg",
+			"address1": "Via Andrea Costa, 69",
+			"address2": "Bologna, Italy",
+			"lat": 44.4951079,
+			"lng": 11.3252367,
+			"phone": "+39 051 123456"
+		},
+		{
+			"id": "test1",
+			"name1": "Naples",
+			"name2": "Spagnoli",
+			"imgDesktop": "/Media/placeholders/locations/naples.jpg",
+			"imgMobile": "/Media/placeholders/locations/naples.jpg",
+			"address1": "Vico Medina 69",
+			"address2": "Naples, Italy",
+			"lat": 40.8420729,
+			"lng": 14.2525261,
+			"phone": "+39 123 123456"
+		},
+		{
+			"id": "test2",
+			"name1": "Dubai",
+			"name2": "Burj Khalifa",
+			"imgDesktop": "/Media/placeholders/locations/dubai.jpg",
+			"imgMobile": "/Media/placeholders/locations/dubai.jpg",
+			"address1": "Sheikh Mohammed bin Rashid Blvd",
+			"address2": "Dubai, UAE",
+			"lat": 25.1972122,
+			"lng": 55.2743124,
+			"phone": "+39 123 123456"
+		},
+		{
+			"id": "test3",
+			"name1": "Warsaw",
+			"name2": "Spire",
+			"imgDesktop": "/Media/placeholders/locations/warsaw.jpg",
+			"imgMobile": "/Media/placeholders/locations/warsaw.jpg",
+			"address1": "Pl. Europejski 1",
+			"address2": "Warsaw, Poland",
+			"lat": 52.2323189,
+			"lng": 20.9842658,
+			"phone": "+48 123 123456"
+		},
+		{
+			"id": "test4",
+			"name1": "San Francisco",
+			"name2": "Embarcadero",
+			"imgDesktop": "/Media/placeholders/locations/sf.jpg",
+			"imgMobile": "/Media/placeholders/locations/sf.jpg",
+			"address1": "Market St.",
+			"address2": "San Francisco, USA",
+			"lat": 37.7939977,
+			"lng": -122.3954832,
+			"phone": "+1 123 123456"
+		}
+	]
+}
