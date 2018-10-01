@@ -3,16 +3,31 @@
     padding: 1rem 3rem;
     position: fixed;
     background-color: $white;
+    z-index: 3;
+    font-size: 0.75em;
     @include desktopmenu{
         padding: 0.3rem 6rem;
-        position: relative;
+        position: absolute;
+    &.is-prestickable {
+      transform: translateY(-100%);
         }
-    
+
+    &.is-stickable {
+      position: fixed;
+      transform: translateY(-100%);
+      transition: all 0.2s ease-in-out;
+        }
+
+    &.is-sticked {
+      transform: translateY(0);
+        }
+    }
+
 .container {
     position: relative;
     font-size: 1.25rem;
     @include covaContainer();
-    
+
     //MOBILE
     .header-mobile {
         position: relative;
@@ -44,13 +59,13 @@
                         transform: translateY(0.6em);
                         transform-origin: 0 -1px;
                     }
-                
+
                     &:after {
                     transform: translateY(-0.6em);
                     transform-origin: 0 1px;
                     }
             }
-            
+
        #menustate:checked ~ & {
             left: 50%;
             transform: translate(-50%, -50%);
@@ -74,13 +89,13 @@
 
       }
         }
-        
+
         .logo {
             content: url('./img/logo_mobile.svg');
             height: 40px;
             display: block;
             margin: 0 auto;
-            
+
             #menustate:checked ~ & {
                 visibility: hidden;
             }
@@ -89,7 +104,7 @@
             display: none;
         }
     }
-     
+
     .nav {
         height: 0;
         .nav-main {
@@ -108,7 +123,7 @@
         .nav-social__items {
                 opacity: 0;
             }
-        
+
         #menustate:checked ~ & {
          height: 100vh;
          display: flex;
@@ -116,7 +131,7 @@
          align-items: center;
          justify-content: space-around;
          text-align: center;
-           
+
             .nav-main__items {
                 opacity: 1;
                 margin-top: 0.25em;
@@ -124,23 +139,23 @@
                 font-family: adobe-caslon-pro, serif;
                 font-size: 2.5rem;
                  transform: translateY(0);
-               
+
         @for $i from 1 to 6 {
               &:nth-child(#{$i}) {
                 transition: all 0.2s ease-out #{0.0+0.05*$i}s;
               }
             }
-                
+
                 a:hover {
                     color: $gold;
                 }
               }
-            
+
             .nav-social {
                 .nav-social__items {
                     opacity: 1;
                     a{
-                        
+
                         &:after {
                             content: attr(data-label);
                             color: $gold;
@@ -200,8 +215,8 @@
       }
         .nav-language{
             display: none;
-           
-            
+
+
             //DESKTOP
             @include desktopmenu{
             cursor: pointer;
@@ -220,11 +235,11 @@
                 height: 0.75rem;
                 transition: all 0.2s ease-in-out;
             }
-                
+
             .language-items {
                 display: none;
                 }
-                
+
          #language:checked ~ & {
              &:after{
                  transform: translateY(-50%) rotate(-180deg);
@@ -239,7 +254,7 @@
                 transform: translateX(-50%);
                 background-color: $white;
                 padding: 20px 20px;
-                
+
                 a {
                     line-height: 2;
                     text-transform: uppercase;
@@ -256,6 +271,6 @@
            color:$lightBlue;
        }
         }
-    
+
     }
 }

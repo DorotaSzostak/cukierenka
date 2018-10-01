@@ -7,6 +7,12 @@ $desktop-width: 992px;
     }
 }
 
+@mixin tablet {
+  @media(min-width: #{$tablet-width}){
+    @content;
+  }
+}
+
 @mixin covaContainer() {
 
   display: block;
