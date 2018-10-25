@@ -18,15 +18,15 @@ time, mark, audio, video {
   vertical-align: baseline;
     box-sizing: border-box;
 }
- 
+
 
 /* HTML5 display-role reset for older browsers */
 //article, aside, details, figcaption, figure,
 //footer, header, hgroup, menu, nav, section{
 //    display: block;
-//    
+//
 //}
-  
+
 body {
   line-height: 1;
   max-width: 2400px;
@@ -34,6 +34,21 @@ body {
   font-size: 14px;
     font-family: adobe-caslon-pro, serif;
 }
+
+.rest {
+  position: relative;
+  top: calc(70px + 20rem);
+  background-color: $white;
+  padding: 5rem 0;
+  color: $deepBlue;
+  @include tablet{
+    top: calc(70px + 46rem);
+  }
+  @include desktopmenu{
+    top: 120px;
+  }
+}
+
 ol, ul {
   list-style: none;
 }
@@ -50,10 +65,10 @@ content: none;
             }
     &:after {
 content: '';
-content: none; 
+content: none;
     }
 }
-  
+
 
 table {
 border-collapse: collapse;

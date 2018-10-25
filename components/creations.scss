@@ -1,0 +1,22 @@
+.creations {
+  @include covaContainer();
+  text-align: center;
+  .creation__slider {
+    .slider__item {
+      width: 100%;
+      .image__container {
+         width: 66.6666%;
+          height: 600px;
+         display: block;
+         margin: 0 auto;
+        background-image: url("data-img");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+
+        }
+      }
+    }
+  }
+

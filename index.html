@@ -8,6 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href="assets/css/main.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <!--	<link href="/assets/css/site.css" rel="stylesheet" media="screen">-->
 </head>
 <body>
@@ -56,18 +57,22 @@
     <main class="main">
 
        <section class="banner">
-        <div class="slider">
+        <div class="slideshow">
             <div class="slider__item" id="slide1">
+
+
             <h1 class="slider__title"><span>The </span>Art <span>Of </span>Pannetone</h1>
             <img class="slider__img" alt="image" src="Media/placeholders/slider1.jpg">
             <button class="slider__button">Explore</button>
             </div>
             <div class="slider__item" id="slide2">
+
             <h1 class="slider__title"><span>The </span>Original <span>From </span>Milan</h1>
             <img class="slider__img" alt="image" src="Media/placeholders/slider2.jpg">
             <button class="slider__button">Explore</button>
             </div>
             <div class="slider__item" id="slide3">
+
             <h1 class="slider__title"><span>Lorem </span>Ipsum <span>Dolor </span>Sit Amet</h1>
             <img class="slider__img" alt="image" src="Media/placeholders/slider3.jpg">
             <button class="slider__button">Explore</button>
@@ -81,53 +86,54 @@
          </nav>
         </section>
 
-        <section class="text">
+        <section class="rest">
+        <div class="text">
             <h2 class="text__title">Cova Lorem Ipsum</h2>
             <p class="text__article">Ique porem andaero videlecum nulpa sum raectiostiis aut occus repudaepudae dolora quunt laborep tiossim porem andaero videlecum nulpa sum raectiostiis agnihicit derum ea vollo exped et resam.</p>
             <button class="text__button">Discover our company</button>
-        </section>
+        </div>
 
-        <section class="creations">
+        <div class="creations">
             <div class="curved"><svg viewBox="0 60 1920 140"><text textLength="600" text-anchor="middle">
 				<textPath xlink:href="#curve" startOffset="29.5%">Creations</textPath>
 			</text></svg></div>
 
-           <div class="creation__slider">
-               <div class="slider__item">
+           <div class="slider creation__slider">
+               <div class="slider__item creations">
                    <h2 class="slider__title">Finest Chocolates</h2>
                    <span class="slider__number">1/4</span>
-                   <img class="slider__img" src="Media/placeholders/creation1.jpg">
+                   <span class="image__container"  data-img ="Media/placeholders/creation1.jpg"></span>
                    <p class="slider__text">Ique porem andaero videlecum nulpa sum raectiostiis aut occus repudaepudae dolora quunt laborep tiossim porem andaero videlecum nulpa sum raectiostiis agnihicit derum ea vollo exped et resam.</p>
                    <button class="slider__button">Explore All</button>
                </div>
 
-                <div class="slider__item">
+                <div class="slider__item creations">
                    <h2 class="slider__title">Finest Chocolates</h2>
                    <span class="slider__number">2/4</span>
-                   <img class="slider__img" src="Media/placeholders/creation2.jpg">
+                  <span class="image__container" data-img="Media/placeholders/creation2.jpg"></span>
                    <p class="slider__text">Ique porem andaero videlecum nulpa sum raectiostiis aut occus repudaepudae dolora quunt laborep tiossim porem andaero videlecum nulpa sum raectiostiis agnihicit derum ea vollo exped et resam.</p>
                    <button class="slider__button">Explore All</button>
                </div>
 
-                <div class="slider__item">
+                <div class="slider__item creations">
                    <h2 class="slider__title">Finest Chocolates</h2>
                    <span class="slider__number">3/4</span>
-                   <img class="slider__img" src="Media/placeholders/creation3.jpg">
+                  <span class="image__container" data-img ="Media/placeholders/creation3.jpg"></span>
                    <p class="slider__text">Ique porem andaero videlecum nulpa sum raectiostiis aut occus repudaepudae dolora quunt laborep tiossim porem andaero videlecum nulpa sum raectiostiis agnihicit derum ea vollo exped et resam.</p>
                    <button class="slider__button">Explore All</button>
                </div>
 
-                <div class="slider__item">
+                <div class="slider__item creations">
                    <h2 class="slider__title">Finest Chocolates</h2>
                    <span class="slider__number">4/4</span>
-                   <img class="slider__img" src="Media/placeholders/store.jpg">
+                  <span class="image__container" data-img ="Media/placeholders/store.jpg"></span>
                    <p class="slider__text">Ique porem andaero videlecum nulpa sum raectiostiis aut occus repudaepudae dolora quunt laborep tiossim porem andaero videlecum nulpa sum raectiostiis agnihicit derum ea vollo exped et resam.</p>
                    <button class="slider__button">Explore All</button>
                </div>
            </div>
-        </section>
+        </div>
 
-        <section class="news">
+        <div class="news">
 
             <h2 class="news__title">Latest news</h2>
             <p class="news__text">Occum eum, soluptae si reruptionsed quam est, vid ut officte mporem rehenih itatio omnisto officia.</p>
@@ -177,17 +183,17 @@
             </div>
 
             <button class="news__button">Explore All</button>
-        </section>
+        </div>
 
-        <section class="video">
+        <div class="video">
 
             <h1 class="video__title">Patisserie Lorem Ipsum</h1>
             <p class="video__text">Asit, non corehenem ad moluptas molor aut es anis re se nemporum, cones sint ut il ius coreper ferovidus mi errunto ipis et, volessum laut hit plabore repudandae late ad qui officil</p>
             <button class="video__button">Play Video</button>
 
-        </section>
+        </div>
 
-        <section class="stores">
+        <div class="stores">
             <div class="curved"><svg viewBox="0 60 1920 140"><text textLength="600" text-anchor="middle">
 				<textPath xlink:href="#curve" startOffset="29.5%">Our Stores</textPath>
 			</text></svg></div>
@@ -226,9 +232,9 @@
            </div>
 
            <button class="stores__button">Explore All</button>
-        </section>
+        </div>
 
-        <section class="newsletter">
+        <div class="newsletter">
 
             <h2 class="newsletter__title">Be the first to know</h2>
             <p class="newsletter__text">Join our newsletter, subscribe to receive our updates and news.</p>
@@ -236,7 +242,7 @@
                 <input type="email" placeholder="Write your email here">
                 <input type="submit" value="OK" />
             </form>
-
+      </div>
         </section>
     </main>
 
@@ -307,5 +313,9 @@
 	</div>
 </aside>
 </body>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type ="module" src="js/app.js"></script>
+<script type ="module" src="js/slick.js"></script>
 </html>

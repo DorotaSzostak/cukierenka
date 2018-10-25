@@ -1,0 +1,50 @@
+.text {
+  @include covaContainer();
+  text-align: center;
+  margin: 0 2rem;
+  padding: 1rem 0;
+  border-bottom: 4px double $deepBlue;
+  .text__title {
+    text-transform: uppercase;
+  }
+  .text__article {
+    padding: 2rem 0;
+    letter-spacing: 0.5px;
+  }
+  .text__button {
+    color: $gold;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 0.8em;
+  }
+  @include tablet{
+    font-size: 1.5em;
+    padding: 3rem;
+    .text__button {
+    border: 1px solid $gold;
+    font-size: 0.6em;
+    padding: 10px 30px;
+      transition: all 0.5s ease;
+      &:hover {
+        background-color: $gold;
+        color: $white;
+      }
+    }
+  }
+
+  @include desktopmenu{
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 3rem;
+    font-size: 1.8rem;
+
+    .text__article {
+      padding: 4rem 0;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+}
